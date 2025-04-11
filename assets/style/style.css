@@ -216,3 +216,82 @@ ul>li>a:hover {
         background-position-y: -40px;
     }
 }
+
+/* ----------------- Brands ----------------- */
+.brands {
+    padding: 41px 30px;
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/* ----------------- features ----------------- */
+.features {
+    text-align: center;
+    max-width: 800px;
+    margin: 112px auto 0 auto;
+}
+
+.features>h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+.features>p {
+	margin-top: 8px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 64px;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.feature-item {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.feature-item>h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.feature-item>p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #374151;
+}
+
+/* ----------------- comments ----------------- */
+.comments {
+    background-color: #D5FAFC;
+}
+
+.content>img {
+    position: absolute;
+    top: 64px;
+}
+
+.comments-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.comment-item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: min-content;
+}
