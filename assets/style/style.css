@@ -465,10 +465,16 @@ p {
     gap: 16px;
 }
 
+.achievement-item>img {
+    width: 32px;
+    height: 32px;
+}
+
 /* ----------------- tools ----------------- */
 .tools-img {
     max-width: 697px;
     max-height: 270px;
+    width: 100%;
 }
 
 /* ----------------- mobile ----------------- */
@@ -482,6 +488,10 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     height: 558px;
+}
+
+.mobile-images>img {
+    width: 100%;
 }
 
 .mobile-images>img:first-child {
