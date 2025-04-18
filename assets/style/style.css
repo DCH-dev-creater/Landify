@@ -492,6 +492,7 @@ p {
 
 .mobile-images>img {
     width: 100%;
+    max-width: 280px;
 }
 
 .mobile-images>img:first-child {
@@ -552,3 +553,128 @@ p {
     margin-top: 24px;
 }
 
+/* ----------------- TABLET ----------------- */
+@media (max-width: 1000px) {
+    nav {
+        grid-template-columns: 128px 1fr;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    .header-hamburger-menu {
+        display: grid;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .banner-content>h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .banner-content {
+        padding-top: 0px;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .comments-list_v2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .comment-item_v2:nth-child(1) {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .comment-item_v2:nth-child(2) {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .comment-item_v2:nth-child(3) {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin-top: 0px;
+    }
+    
+    .comment-item_v2:nth-child(4) {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .achievements {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .mobile {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding-top: 80px;
+    }
+
+    .mobile-images {
+        justify-items: center;
+    }
+
+}
+
+/* ----------------- MOBILE ----------------- */
+@media (max-width: 700px) {
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .header-buttons>a {
+        display: none;
+    }
+
+    .banner-content>h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .features-list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .achievements-block {
+        grid-template-columns: 1fr;
+    }
+
+    .tools {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding-top: 29px;
+    }
+
+    .mobile-images {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .footer-content {
+        display: grid;
+        gap: 32px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
